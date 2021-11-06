@@ -32,6 +32,7 @@ vicare:
   username: VICARE_EMAIL
   password: VICARE_PASSWORD
   client_id: VICARE_CLIENT_ID
+  heating_type: (generic, gas, heatpump or fuelcell)
 ```
 
 The above-required configuration parameters can be obtained as follows:
@@ -67,7 +68,7 @@ name:
   type: string
 heating_type:
   description: One of `generic`, `gas`, `heatpump` or `fuelcell`. Specifying the heating_type provides additional attributes and sensors specific for the heating system.
-  required: false
+  required: true
   type: string
   default: generic
 scan_interval:
